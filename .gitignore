@@ -1,0 +1,9 @@
+# Probe and audit output from development sessions
+*-probe.txt
+axe-report*.txt
+focus-audit.txt
+WCAG-AUDIT.md
+
+# Never commit the game's own code
+cc.js
+index.html
