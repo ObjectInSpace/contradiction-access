@@ -1,5 +1,26 @@
 # Changelog
 
+## v1.1.0 — 2026-09-01
+
+First public release. No changes to the mod itself; `a11y.js` is byte for
+byte the v1.0.0 file.
+
+- **Added an installer** (`Install.bat` / `Uninstall.bat`, driving
+  `install.ps1`). It locates the Steam copy via Steam's own library records,
+  backs up `index.html`, copies the script in and adds the one `<script>`
+  line. Manual installation is still documented for anyone who prefers it.
+  - Safe to re-run: it will not duplicate the script tag, and it never
+    overwrites an existing backup with an already-patched file.
+  - Uninstall restores the original `index.html` byte for byte, and falls
+    back to stripping the added line if the backup has been deleted.
+  - Preserves the file's LF line endings rather than rewriting all 651
+    lines as CRLF.
+- **Documented the scenery gap** in the README: locations are not described,
+  so the few puzzles requiring an inventory item used in the right place have
+  no non-visual cue.
+- Added an MIT `LICENSE` covering the mod's own code. No game files are
+  redistributed.
+
 ## v1.0.0 — 2026-08-18
 
 First release.

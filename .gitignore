@@ -7,3 +7,8 @@ WCAG-AUDIT.md
 # Never commit the game's own code
 cc.js
 index.html
+index.html.orig
+*.vtt
+
+# Release archives
+*.zip
